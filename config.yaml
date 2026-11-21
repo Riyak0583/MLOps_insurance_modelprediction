@@ -1,12 +1,12 @@
 # Central configuration: edit this instead of touching code.
 data:
-  path: data/dataset.csv        # CSV used for training
-  target: target                # name of the label column
+  path: "C:\MLOps_insurance_modelprediction\data\raw\insurance.csv"        # CSV used for training
+  target: charges              # name of the label column
   test_size: 0.2
-  random_state: 42
+  random_state: 1
 
 model:
-  type: random_forest           # random_forest | logistic_regression
+  type: random_forest_regression            # random_forest | logistic_regression
   params:
     n_estimators: 100
     max_depth: 5
